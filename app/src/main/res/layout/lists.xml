@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_account_circle_black_24dp"
+        android:padding="5dp"
+        android:id="@+id/userdp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:textStyle="bold"
+        android:padding="10dp"
+
+        android:layout_toRightOf="@id/userdp"
+        android:id="@+id/nameOfPoster"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/nameOfPoster"
+        android:layout_height="wrap_content"
+        android:text="post"
+        android:textSize="20dp"
+        android:id="@+id/postingNews"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="time"
+       android:layout_marginTop="15dp"
+        android:padding="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/timeOfPosting"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/images1"
+        android:padding="10dp"
+        android:layout_below="@id/postingNews"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/images2"
+        android:padding="10dp"
+        android:layout_toRightOf="@id/images1"
+        android:layout_below="@id/postingNews"
+        />
+    <ImageView
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/images3"
+        android:layout_toRightOf="@id/images2"
+        android:layout_below="@id/postingNews"
+        />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/like"
+        android:src="@drawable/ic_thumb_up_black_24dp"
+        android:tint="@color/grey"
+        android:background="#ffffff"
+        android:layout_below="@id/images1"
+        android:padding="10dp"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/likeCount"
+        android:layout_toRightOf="@id/like"
+        android:text="0"
+        android:layout_below="@id/images1"
+        android:padding="10dp"
+        />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_thumb_down_black_24dp"
+        android:layout_toRightOf="@id/likeCount"
+        android:layout_below="@id/images1"
+        android:padding="10dp"
+        android:id="@+id/dislike"
+        android:background="#ffffff"
+        android:tint="@color/grey"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:padding="10dp"
+        android:id="@+id/dislikeCount"
+        android:layout_alignTop="@+id/dislike"
+        android:layout_toEndOf="@+id/dislike" />
+
+</RelativeLayout>

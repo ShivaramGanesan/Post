@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.shiva.post.PostNews">
+
+
+
+
+
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp">
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+
+            android:layout_marginTop="70dp"
+            android:id="@+id/newPost"
+            android:background="@drawable/editbox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Post news*"
+            android:inputType="textMultiLine"
+
+            android:padding="10dp"
+            />
+
+
+    </ScrollView>
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:padding="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/delete"
+        android:layout_alignParentStart="true">
+        <android.support.design.widget.FloatingActionButton
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:backgroundTint="@color/cyanblue"
+
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/ic_input_black_24dp"
+            android:id="@+id/postnow"
+            />
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/image1"
+        android:drawingCacheQuality="high"
+        android:clickable="true"
+        android:src="@drawable/ic_add_a_photo_black_24dp"
+        />
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/ic_add_a_photo_black_24dp"
+        android:id="@+id/image2"
+        android:drawingCacheQuality="high"
+        android:clickable="true"
+        android:layout_toRightOf="@id/image1"
+        />
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/image3"
+        android:drawingCacheQuality="high"
+        android:clickable="true"
+        android:layout_toRightOf="@id/image2"
+        android:src="@drawable/ic_add_a_photo_black_24dp"
+        />
+
+</RelativeLayout>
+
+
+
+</LinearLayout>
